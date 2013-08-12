@@ -37,7 +37,7 @@ get_header(); ?>
 					var $imgOppened = $('#img-oppened');
 
 					var posts = data.posts;
-					var qtdPosts = posts.length;
+					var qtdPosts = posts.length - 1;
 					var position = 0;
 					var imgSrc;
 					
