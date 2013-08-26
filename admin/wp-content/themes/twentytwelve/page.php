@@ -17,19 +17,21 @@ get_header(); ?>
 			<div id="imgs-container">
 				<div id="prev-img"></div>
 				<div id="img-oppened"></div>
-				<div id="next-img"></div>
+				<div id="next-img" style="position: absolute;"></div>
 			<div>
 			<script>
 			( function( $ ) {
 
-				var next = function(imgSrc, $imgOppened){
-					var $img = $('<img src="'+imgSrc+'" />');
-					$imgOppened.empty().append($img);
+				var next = function(position){
+					var next_position = position - 1;
+					//$('#img_'+next_position).fadeIn();
+					$('#img_'+position).fadeOut("slow");
 				};
 
-				var prev = function(imgSrc, $imgOppened){
-					var $img = $('<img src="'+imgSrc+'" />');
-					$imgOppened.empty().append($img);
+				var prev = function(position){
+					var next_position = position + 1;
+					//$('#img_'+next_position).fadeIn();
+					$('#img_'+position).fadeOut("slow");
 				};
 
 				var success = function(data){
@@ -41,22 +43,25 @@ get_header(); ?>
 					var position = 0;
 					var imgSrc;
 					
-					$imgOppened.append('<img src="'+posts[position].imagem_grande+'" />');
+					for(var i in posts){
+						imgSrc = posts[i].imagem_grande;
+						$imgOppened.append('<img style="position: absolute;" id="img_'+i+'" src="'+imgSrc+'" />');
+					}
+
+					 var opts = {
+      speed: 500            //slider speed
+      ,timer: 4000          //time between animation
+      ,autoSlider: true     //autoslide on/off
+      ,hasNav: true         //show prev/next slider button?
+      ,pauseOnHover: false   //pause when mouse over ?
+      ,zIndex:20            //z-index  setting
+        ,showIndicator: true  // show Indicators?
+      , //callback function after every slider action
+    }
+
+					$imgOppened.fadeSlider(opts);
+					
 										
-					$("#next-img").on("click", function(){
-						if(position < qtdPosts){
-							position = position + 1;
-							imgSrc = posts[position].imagem_grande;
-							next(imgSrc, $imgOppened);
-						}
-					});
-					$("#prev-img").on("click", function(){
-						if(position > 0){
-							position = position - 1;
-							imgSrc = posts[position].imagem_grande;
-							prev(imgSrc, $imgOppened);
-						}
-					});
 
 					/*
 					for(var i in data.posts){
@@ -85,3 +90,5 @@ get_header(); ?>
 			</script>
 		</div><!-- #content -->
 	</div><!-- #primary -->
+
+	<?php get_footer(); ?>

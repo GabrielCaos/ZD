@@ -1,23 +1,15 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains footer content and the closing of the
- * #main and #page div elements.
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
- */
-?>
-	</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-			<?php do_action( 'twentytwelve_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- FOOTER -->
+<div class="footer container container-fluid">
+
+</div>
+
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap-collapse.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap-scrollspy.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
 
 <?php wp_footer(); ?>
 </body>

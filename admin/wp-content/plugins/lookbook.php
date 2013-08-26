@@ -14,12 +14,7 @@
 	//add_action('save_post', 'saveDataLooks');
 
 	$prefix = "looks";
-	
-	
-	
-	
-	
-	
+		
 	function create_Looks() 
 	{
 		$labels = array(
