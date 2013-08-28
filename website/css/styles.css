@@ -6,22 +6,53 @@
  *
  */
 
+#imgBG{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	bottom: 0;
+	width: 2000px;
+	margin-left: -1000px;
+	text-align: center;
+	overflow: hidden;
+	z-index: 3;
+}
+
+#zdLOGO{
+	position: absolute;
+}
  
- 
+
+
+
+
  /***** STRUCTURE *****/
  
  body { 
-	background: url('../img/bg.png') repeat-x;
-	background-color: #fff;
+	/*background: url('../img/bg.png') repeat-x;*/
+	background-color: #000;
+	font-family: 'Federo', sans-serif;
 	}
 	
 h1, h2, h3, h4, h5, h6 {
-	text-shadow: white 0.02em 0.02em;
-	font-family: 'QlassikBold', sans-serif;
+	/*text-shadow: white 0.02em 0.02em;
+	font-family: 'QlassikBold', sans-serif;*/
+	font-family: 'Federo', sans-serif;
 	}
 	
 h2 {
 	font-size: 2.3em;
+}
+
+.navbar {
+	background-color: #000;
+	min-height: 60px;
+}
+
+.navbar-inner{
+	font-size: 12px;
+	/*color: #c9701a;*/
+	margin-top: 14px;
 }
  
  .content {
@@ -51,12 +82,12 @@ h2 {
 	
 /***** NAVIGATION BAR *****/
 
-.navbar .brand {
+/*.navbar .brand {
 	font-weight: bold;
 	color: black;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
 }
-
+*/
 
 
 /***** HOMEPAGE *****/
