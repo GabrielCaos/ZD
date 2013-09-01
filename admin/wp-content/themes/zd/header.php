@@ -31,8 +31,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fade-slider.min.js"></script>
 
+<link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
 
-<?php wp_head(); ?>
 </head>
 
 <body data-spy="scroll">
@@ -42,10 +43,14 @@
 	<div class="navbar-inner">
 		<div class="container">
 	
-			<a class="brand pull-left" href="#">
+			<!-- <a class="brand pull-left" href="#">
 			FlexApp
-			</a>
-	
+			</a> -->
+			<div id="zdLOGO">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/zdLOGO.jpg">
+			</div>
+
+			
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -54,14 +59,19 @@
 		
 			<div class="nav-collapse collapse">
 				<ul id="nav-list" class="nav pull-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#updates">Updates</a></li>
-					<li><a href="#screenshots">Screenshots</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#colecao">COLEÇÃO</a></li>
+					<li><a href="#catalogo">CATÁLOGO</a></li>
+					<li><a href="#zd">ZD</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#lojas">LOJAS</a></li>
+					<li><a href="#contato">CONTATO</a></li>
 				</ul>
 			</div>
 		
 		</div>
 	</div>
 </div>
+
+
+<?php wp_head(); ?>
+</head>

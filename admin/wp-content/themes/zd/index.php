@@ -7,70 +7,64 @@
 
 	<!-- HOME -->
 	<div class="row-fluid">
-  
-		<!-- PHONES IMAGE FOR DESKTOP MEDIA QUERY -->
-		<div class="span5 visible-desktop">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/phones.png">
-		</div>
-	
-		<!-- APP DETAILS -->
-		<div class="span7">
-	
-			<!-- ICON -->
-			<div class="visible-desktop" id="icon">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/app_icon.png" />
+
+
+  		<!--<div id="imgBG">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/zdBG.jpg">
+		</div>-->
+
+		<div id="primary" class="site-content">
+		<div id="content" role="main">
+			<div id="imgs-container">
+				<div id="img-oppened"></div>
 			</div>
-			
-			<!-- APP NAME -->
-			<div id="app-name">
-				<h1>FlexApp</h1>
-			</div>
-			
-			<!-- VERSION -->
-			<div id="version">
-				<span class="version-top label label-inverse">Version 1.0</span>
-			</div>
-            
-			<!-- TAGLINE -->
-			<div id="tagline">
-				A Free Responsive Website Template for Your Mobile App
-			</div>
+			<script>
+			( function( $ ) {
+
+				var success = function(data){
+					var $imgs_list = $('<div id="imgs_list"></div>');
+					var $imgOppened = $('#img-oppened');
+
+					var posts = data.posts;
+					var qtdPosts = posts.length - 1;
+					var position = 0;
+					var imgSrc;
+					
+					for(var i in posts){
+						imgSrc = posts[i].imagem_grande;
+						$imgOppened.append('<img style="position: absolute;" id="img_'+i+'" src="'+imgSrc+'" />');
+					}
+
+					var opts = {
+				      speed: 500            //slider speed
+				      ,timer: 4000          //time between animation
+				      ,autoSlider: true     //autoslide on/off
+				      ,hasNav: true         //show prev/next slider button?
+				      ,pauseOnHover: false   //pause when mouse over ?
+				      ,zIndex:20            //z-index  setting
+				      ,showIndicator: true  // show Indicators?
+				      , //callback function after every slider action
+				    }
+
+					$imgOppened.fadeSlider(opts);
+				};
+
+		        var error = function(){
+		            alert('erro');
+		        };
+
+				$.ajax({
+	                type: "GET",
+	                dataType: "json",
+	                url: 'http://localhost/ZD/admin/?page_id=13',
+	                success: success,
+	                error: error
+            	});
+			} )( jQuery );
+			</script>
+			</div><!-- #content -->
+		</div><!-- #primary -->
 		
-			<!-- PHONES IMAGE FOR TABLET MEDIA QUERY -->
-			<div class="hidden-desktop" id="phones">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/phones.png">
-			</div>
-            
-			<!-- DESCRIPTION -->
-			<div id="description">
-				FlexApp is a free, fully responsive website template for marketing your mobile application. The design uses CSS3 to scale the content proportionally to whatever device is being used. Give it a try by resizing your browser!
-			</div>
-            
-			<!-- FEATURES -->
-			<ul id="features">
-				<li>Fully Responsive HTML/CSS3 Template</li>
-				<li>Built on Bootstrap by Twitter</li>
-				<li>Images and Photoshop Files Included</li>
-				<li>Completely Free!</li>
-			</ul>
-		
-			<!-- DOWNLOAD & REQUIREMENT BOX -->
-			<div class="download-box">
-				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/available-on-the-app-store.png"></a>
-			</div>
-			<div class="download-box">
-				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/android_app_on_play_logo_large.png"></a>
-			</div>
-			<div class="download-box">
-				<strong>Requirements:</strong><br>
-				Compatible with iPhone and iPod touch. Requires iPhone OS 2.2 or later. WiFi, Edge, or 3G network connection sometimes required.
-			</div>
-			<div class="download-box">
-				<strong>Requirements:</strong><br>
-				Requires Android 2.3 and higher. WiFi, Edge, or 3G network connection sometimes required.
-			</div>
-			
-		</div>
 	</div>
 	
 	
@@ -78,57 +72,15 @@
 	<!-- ABOUT & UPDATES -->
 	<div class="row-fluid" id="about">
 	
-		<div class="span6">
-			<h2 class="page-title" id="scroll_up">
-				About
-				<a href="#home" class="arrow-top">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-top.png">
-				</a>
-			</h2>
 			
-			<p>FlexApp is a fully responsive HTML/CSS template perfect for marketing your mobile application. The template utilizes responsive CSS3 & jQuery technology to provide a consistent and enjoyable viewing experience across multiple devices.</p>
-			<p>FlexApp is 100% free to use. You may change, edit or modify the template however you wish, for free or commercial projects.</p> 
-			<p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">FlexApp</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.trippoinc.com" property="cc:attributionName" rel="cc:attributionURL">Trippo</a> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.<br />Built on <a xmlns:dct="http://purl.org/dc/terms/" href="http://twitter.github.com/bootstrap/" rel="dct:source">Bootstrap</a>.</p>
+			
 			
 		</div>
 	
-		<div class="span6 updates" id="updates">
-			<h2 class="page-title" id="scroll_up">
-				Updates
-				<a href="#home" class="arrow-top">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/arrow-top.png">
-				</a>
-			</h2>
-			
-			<!-- UPDATES & RELEASE NOTES -->
-			
-			<h3 class="version">Version 1.2</h3>
-			<span class="release-date">Released on April 28th, 2012</span>
-			<ul>
-				<li><span class="label new">NEW</span>Challenge a Friend</li>
-				<li><span class="label fix">FIX</span>Fixed 'Resume Game' Bug</li>
-			</ul>
-			<hr>
-			
-			<h3 class="version">Version 1.1</h3>
-			<span class="release-date">Released on January 28th, 2012</span>
-			<ul>
-				<li><span class="label new">NEW</span>Facebook & Twitter Integration</li>
-				<li><span class="label fix">FIX</span>Various Bug Fixes</li>
-				<li><span class="label new">NEW</span>Graphics for Retina Display</li>
-			</ul>
-			<hr>
-		
-			<h3 class="version">Version 1.0</h3>
-			<span class="release-date">Released on January 10th, 2012</span>
-			<ul>
-				<li><span class="label label-info">NEW</span>Initial Release</li>
-			</ul>
-			
-		</div>
 	
-	</div>
-
+	
+	
+	
 	<!-- SCREENSHOTS -->
 	<div class="row-fluid" id="screenshots">
 		
@@ -250,7 +202,7 @@
 		</div>
 		
 	</div>
-
+	
 </div>
 
 <?php get_footer(); ?>
