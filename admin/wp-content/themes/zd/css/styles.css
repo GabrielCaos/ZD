@@ -1,7 +1,11 @@
 #imgBG{
-	background-image: url("../img/zdBG.jpg");
+	background-image: url("../img/zdBG.png");
 	background-size: cover;
-	height: 540px;
+	height: 660px;
+	width: 1320px;
+	left:50%;
+	margin-left: -180px;
+	margin-top: -45px;
 }
 
 #zdLOGO{
