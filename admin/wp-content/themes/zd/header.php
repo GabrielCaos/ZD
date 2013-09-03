@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
 <!-- media-queries.js -->
@@ -28,9 +27,6 @@
 
 <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fade-slider.min.js"></script>
-
 <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
 
@@ -38,14 +34,10 @@
 
 <body data-spy="scroll">
 
-<!-- TOP MENU NAVIGATION -->
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 	
-			<!-- <a class="brand pull-left" href="#">
-			FlexApp
-			</a> -->
 			<div id="zdLOGO">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/zdLOGO.jpg">
 			</div>
@@ -74,4 +66,3 @@
 
 
 <?php wp_head(); ?>
-</head>

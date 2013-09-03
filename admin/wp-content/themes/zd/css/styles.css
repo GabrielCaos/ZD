@@ -1,13 +1,7 @@
 #imgBG{
-	position: absolute;
-	top: 60px;
-	left: 50%;
-	bottom: 0;
-	width: 2000px;
-	margin-left: -1000px;
-	text-align: center;
-	overflow: hidden;
-	z-index: 3;
+	background-image: url("../img/zdBG.jpg");
+	background-size: cover;
+	height: 540px;
 }
 
 #zdLOGO{
@@ -225,7 +219,8 @@ h2 {
 /***** SLIDER *****/
 
 .fade-slides{
-	top: 50px !important;
+	top: 0px !important;
+	position: relative !important; 
 }
 
 .fs-nav{
@@ -237,7 +232,8 @@ h2 {
 }
 
 .fs-nav-prev{
-	position: absolute;
+	position: relative;
+	float: left;
 	left: 31px;
 
 }
@@ -246,4 +242,8 @@ h2 {
 	position: relative;
 	float: right;
 	right: 3%;
+}
+
+.bottom{
+	margin-bottom: 50px;
 }
