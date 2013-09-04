@@ -50,9 +50,15 @@
 			</a>
 		
 			<div class="nav-collapse collapse">
-				<ul id="nav-list" class="nav pull-right">
+				<ul id="nav-list" class="nav pull-right cssMenu">
 					<li><a href="#colecao">COLEÇÃO</a></li>
-					<li><a href="#catalogo">CATÁLOGO</a></li>
+					<li><a href="#catalogo">CATÁLOGO</a>
+						<ul class="drop">
+							<li><a href="#">MASCULINO</a></li>
+							<li><a href="#">FEMININO</a></li>
+						</ul>
+
+					</li>
 					<li><a href="#zd">ZD</a></li>
 					<li><a href="#blog">BLOG</a></li>
 					<li><a href="#lojas">LOJAS</a></li>
