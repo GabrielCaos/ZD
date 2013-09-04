@@ -14,7 +14,16 @@
 }
  
 
-
+#imgRODAPE{
+	position: relative;
+	background-image: url("../img/zdRODAPE.png");
+	background-size: cover;
+	height: 660px;
+	width: 1320px;
+	left:50%;
+	margin-left: -180px;
+	/*margin-top: -45px;*/
+}
 
 
  /***** STRUCTURE *****/

@@ -1,14 +1,20 @@
 <?php get_header(); ?>
 
 <div class="container content container-fluid" id="zd">
-	<div class="row-fluid bottom">
+	<!-- HOME -->
+	<div class="row-fluid">
+
 		<div id="imgBG"></div>
 	</div>
 
-	<div class="row-fluid bottom" id="colecao">
+	<div class="row-fluid" id="colecao">
 		<div id="imgs-container">
 			<div id="img-oppened"></div>
 		</div>
+	</div>
+
+	<div class="footer container container-fluid">
+		<div id="imgRODAPE"></div>
 	</div>
 </div>
 
