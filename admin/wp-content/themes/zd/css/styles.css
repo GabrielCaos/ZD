@@ -149,6 +149,10 @@ h2 {
 	background-color: #000;
 	min-height: 60px;
 
+	-moz-box-shadow: 8px 8px 15px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 8px 8px 15px rgba(0,0,0,0.4);
+	box-shadow: 8px 8px 15px rgba(0,0,0,0.4);
+
 }
 
 .navbar-inner{
