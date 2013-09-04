@@ -21,7 +21,7 @@
 	height: 450.72px;
 	width: 1320px;
 	left:50%;
-	margin-left: -180px;
+	margin-left: -160px;
 
 	margin-top: 460px;
 }
@@ -206,14 +206,14 @@ h2 {
 	
 /***** CONTACT *****/
 
-#contact-form {
+/*#contact-form {
 	border-left: 1px solid #cccccc;
 	}
 	
 #contact-info {
 	padding-bottom:20px;
 	}
-	
+	*/
 	
 	
 /***** FOOTER *****/
@@ -221,17 +221,17 @@ h2 {
 .footer {
 	font-size: 0.85em;
 	line-height: 1.5em;
-	padding: 15px 0;
-	border-top: 1px solid #CCC;
+	padding: 0 0;
+	/*border-top: 1px solid #CCC;*/
 }
 
-#copyright {
+/*#copyright {
 	float:left;
 	}
 	
 #credits {
 	float:right;
-	}
+	}*/
 
 /***** SLIDER *****/
 
