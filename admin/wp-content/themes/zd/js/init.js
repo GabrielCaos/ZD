@@ -5,6 +5,7 @@ $(function(){
 		e.preventDefault();
 		 $('html, body').animate({
 				scrollTop: $($(this).children("a").attr("href")).offset().top
+				console.log('testando');
 		 },1500);
 	 });
  });
