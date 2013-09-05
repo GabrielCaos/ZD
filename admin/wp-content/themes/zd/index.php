@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container content container-fluid" id="zd">
+<div class="container content container-fluid" id="home">
 	<!-- HOME -->
 	<div class="row-fluid">
 
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 
-	<div class="footer container container-fluid">
+	<div class="footer container container-fluid" id="rodape">
 		<div id="imgRODAPE"></div>
 	</div>
 </div>

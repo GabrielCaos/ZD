@@ -39,7 +39,9 @@
 		<div class="container">
 	
 			<div id="zdLOGO">
+				<a href="#home">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/zdLOGO.jpg">
+				</a>
 			</div>
 
 			
@@ -51,6 +53,7 @@
 		
 			<div class="nav-collapse collapse">
 				<ul id="nav-list" class="nav pull-right cssMenu">
+					<li><a href="#home">HOME</a></li>
 					<li><a href="#colecao">COLEÇÃO</a></li>
 					<li><a href="#catalogo">CATÁLOGO</a>
 						<ul class="drop">
@@ -59,10 +62,10 @@
 						</ul>
 
 					</li>
-					<li><a href="#zd">ZD</a></li>
-					<li><a href="#blog">BLOG</a></li>
-					<li><a href="#lojas">LOJAS</a></li>
-					<li><a href="#contato">CONTATO</a></li>
+					<li><a href="#rodape">ZD</a></li>
+					<!-- <li><a href="#blog">BLOG</a></li>
+					<li><a href="#lojas">LOJAS</a></li> -->
+					<li><a href="#rodape">CONTATO</a></li>
 				</ul>
 			</div>
 		
