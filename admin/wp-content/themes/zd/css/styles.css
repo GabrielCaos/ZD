@@ -1,37 +1,3 @@
-#imgBG{
-	background-image: url("../img/zdBG3.jpg");
-	background-size: cover;
-	height: 654px;
-	width: 1120px;
-	left:50%;
-	margin-left: -80px;
-	margin-top: -45px;
-}
-
-#zdLOGO{
-	position: absolute;
-	left: 299px;
-}
- 
-
-#imgRODAPE{
-	/*position: relative;*/
-	background-image: url("../img/zdRODAPE.png");
-	background-size: cover;
-	height: 560px;
-	width: 1120px;
-	left:50%;
-	margin-left: -80px;
-
-	margin-top: 460px;
-}
-
-#bgPassador{
-	background-color: #fff;
-	width: 4000px;
-	height: 627px;
-	margin-left: -1500px;
-}
 
 
 
@@ -122,6 +88,51 @@ ul.cssMenu li:hover > ul
 	display:block;
 }
 
+
+
+
+
+
+
+/*//custom css*/
+
+#imgBG{
+	background-image: url("../img/zdBG3.jpg");
+	background-size: cover;
+	height: 654px;
+	width: 1120px;
+	left:50%;
+	margin-left: -80px;
+	margin-top: -45px;
+}
+
+#zdLOGO{
+	/*position: absolute;*/
+	margin-left: 125px;
+	left: 299px;
+	height: 0px;
+}
+
+ 
+
+#imgRODAPE{
+	/*position: relative;*/
+	background-image: url("../img/zdRODAPE.png");
+	background-size: cover;
+	height: 560px;
+	width: 1120px;
+	left:50%;
+	margin-left: -80px;
+
+	margin-top: 460px;
+}
+
+#bgPassador{
+	background-color: #fff;
+	width: 4000px;
+	height: 627px;
+	margin-left: -1500px;
+}
 
 
 
