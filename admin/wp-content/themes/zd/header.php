@@ -65,7 +65,7 @@
 					<li><a href="#rodape">ZD</a></li>
 					<!-- <li><a href="#blog">BLOG</a></li>
 					<li><a href="#lojas">LOJAS</a></li> -->
-					<li><a href="#rodape">CONTATO</a></li>
+					<!-- <li><a href="#rodape">CONTATO</a></li> -->
 				</ul>
 			</div>
 		
