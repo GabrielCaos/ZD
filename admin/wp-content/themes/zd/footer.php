@@ -1,5 +1,5 @@
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.3.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fade-slider.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap-collapse.js"></script>

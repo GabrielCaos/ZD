@@ -55,10 +55,10 @@
 				<ul id="nav-list" class="nav pull-right cssMenu">
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#colecao">COLEÇÃO</a></li>
-					<li><a href="#catalogo">CATÁLOGO</a>
+					<li><a href="#">CATÁLOGO</a>
 						<ul class="drop">
-							<li><a href="#">MASCULINO</a></li>
-							<li><a href="#">FEMININO</a></li>
+							<li><a href="#colecao">MASCULINO</a></li>
+							<li><a href="#colecao">FEMININO</a></li>
 						</ul>
 
 					</li>
