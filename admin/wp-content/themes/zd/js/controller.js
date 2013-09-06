@@ -1,8 +1,9 @@
 ( function( $ ) {
 
 	var success = function(data){
-		var $imgs_list = $('<div id="imgs_list"></div>');
 		var $imgOppened = $('#img-oppened');
+		$imgOppened.empty();
+		var $imgs_list = $('<div id="imgs_list"></div>');
 
 		var posts = data.posts;
 		var qtdPosts = posts.length - 1;
@@ -29,14 +30,33 @@
 	};
 
     var error = function(){
-        alert('Ocorreu um erro, por favor recarregue a página.');
+        alert("Ocorreu um erro, por favor recarregue a página.");
+        console.log();
     };
 
-	$.ajax({
-        type: "GET",
-        dataType: "json",
-        url: 'http://localhost/ZD/admin/?page_id=13',
-        success: success,
-        error: error
-	});
+	function criaColecao(){
+		$.ajax({
+	        type: "GET",
+	        dataType: "json",
+	        url: 'http://localhost/ZD/admin/colecao',
+	        success: success,
+	        error: error
+		});
+	}
+
+	function criaLooks(){
+		$.ajax({
+	        type: "GET",
+	        dataType: "json",
+	        url: 'http://localhost/ZD/admin/lookbook',
+	        success: success,
+	        error: error
+		});
+	}
+
+	$("#looks_maculino").on("click", criaLooks);
+	$("#looks_feminino").on("click", criaLooks);
+
+	criaColecao();
+
 } )( jQuery );

@@ -57,8 +57,8 @@
 					<li><a href="#colecao">COLEÇÃO</a></li>
 					<li><a href="#">CATÁLOGO</a>
 						<ul class="drop">
-							<li><a href="#colecao">MASCULINO</a></li>
-							<li><a href="#colecao">FEMININO</a></li>
+							<li><a id="looks_maculino" href="#colecao">MASCULINO</a></li>
+							<li><a id="looks_feminino" href="#colecao">FEMININO</a></li>
 						</ul>
 
 					</li>

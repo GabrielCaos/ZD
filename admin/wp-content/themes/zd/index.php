@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container content container-fluid" id="home">
-
 	<div class="row-fluid">
-
 		<div id="imgBG"></div>
 	</div>
 
