@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container content container-fluid" id="home">
-	<!-- HOME -->
+
 	<div class="row-fluid">
 
 		<div id="imgBG"></div>

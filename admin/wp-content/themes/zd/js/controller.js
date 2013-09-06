@@ -21,14 +21,15 @@
 		    hasNav: true,
 		    pauseOnHover: true,
 		    zIndex: 20,
-		    showIndicator: true
+		    showIndicator: false
 		}
 
 		$imgOppened.fadeSlider(opts);
+		$(".fs-nav").text("");
 	};
 
     var error = function(){
-        alert('erro');
+        alert('Ocorreu um erro, por favor recarregue a página.');
     };
 
 	$.ajax({
