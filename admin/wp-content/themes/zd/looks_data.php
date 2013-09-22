@@ -2,9 +2,17 @@
 /* 
 	Template Name: Lookbook 
 */
-		
+
+if(isset($_GET["tipo"])){
+	$tipo = $_GET["tipo"];
+}
+else{
+	$tipo = "masculino";
+}
+
 $args = array(
-	'post_type'=> 'looks',
+	'post_type' => 'looks',
+	'lookbook' => $tipo,
 	'posts_per_page' => -1
 );
 	

@@ -55,12 +55,11 @@
 				<ul id="nav-list" class="nav pull-right cssMenu">
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#colecao">COLEÇÃO</a></li>
-					<li><a href="#">CATÁLOGO</a>
-						<ul class="drop">
-							<li><a id="looks_maculino" href="#colecao">MASCULINO</a></li>
-							<li><a id="looks_feminino" href="#colecao">FEMININO</a></li>
+					<li><a href="#catalogo">CATÁLOGO</a>
+						<ul id="looks_drop" class="drop">
+							<li id="looks_maculino"><a href="#catalogo">MASCULINO</a></li>
+							<li id="looks_feminino"><a href="#catalogo">FEMININO</a></li>
 						</ul>
-
 					</li>
 					<li><a href="#rodape">ZD</a></li>
 					<!-- <li><a href="#blog">BLOG</a></li>

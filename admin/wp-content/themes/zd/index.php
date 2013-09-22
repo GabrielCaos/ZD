@@ -6,13 +6,20 @@
 	</div>
 
 	<div class="row-fluid" id="colecao">
-		<div id="imgs-container">
-			<div id="img-oppened"></div>
+		<div id="imgs-container-colecao">
+			<div id="img-oppened-colecao"></div>
 		</div>
 		<div id="bgPassador"></div>
 	</div>
 
-	<div class="footer container container-fluid" id="rodape">
+	<div class="row-fluid" id="catalogo">
+		<div id="imgs-container-looks">
+			<div id="img-oppened-looks"></div>
+		</div>
+		<div id="bgPassador"></div>
+	</div>
+
+	<div class="footer container content container-fluid" id="rodape">
 		<div id="imgs-containerFOOTER">
 			<div id="imgRODAPE"></div>
 		</div>

@@ -105,10 +105,9 @@ background-image: url(data:image/jpeg;base64,/9j/4RsjRXhpZgAASUkqAAgAAAAMAAABAwA
   	background-size: cover;
 	height: 654px;
 	width: 1120px;
-	margin-left: -545px;
 	margin-top: -45px;
-	position: relative;
-	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #zdLOGO{
@@ -128,8 +127,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGAAAAK8CAMA
   	background-size: cover;
 	height: 700px;
 	width: 1120px;
-	left:50%;
-	margin-left: -80px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #bgPassador{
@@ -357,7 +356,7 @@ h2 {
 	z-index: 33;
 	width: 50px;
 	height: 96px;
-	margin-top: 25%;
+	margin-top: 250px;
 }
 
 .fs-nav-prev{

@@ -1,9 +1,19 @@
 ( function( $ ) {
 
-	var success = function(data){
-		var $imgOppened = $('#img-oppened');
+	var success = function(data, secao){
+		var $imgOppened;
+		var $imgs_list;
+		if(secao == "colecao"){
+			$imgOppened = $('#img-oppened-colecao');
+			$imgs_list = $('<div id="imgs_list_colecao"></div>');
+		} else{
+			if(secao == "looks"){
+				$imgOppened = $('#img-oppened-looks');
+				$imgs_list = $('<div id="imgs_list_looks"></div>');
+			}
+		}
+
 		$imgOppened.empty();
-		var $imgs_list = $('<div id="imgs_list"></div>');
 
 		var posts = data.posts;
 		var qtdPosts = posts.length - 1;
@@ -39,24 +49,56 @@
 	        type: "GET",
 	        dataType: "json",
 	        url: 'http://localhost/ZD/admin/colecao',
-	        success: success,
+	        success: function(data){
+	        	success(data, "colecao");
+	        },
 	        error: error
 		});
 	}
 
-	function criaLooks(){
+	function criaLooksMasc(){
 		$.ajax({
 	        type: "GET",
 	        dataType: "json",
-	        url: 'http://localhost/ZD/admin/lookbook',
-	        success: success,
+	        url: 'http://localhost/ZD/admin/lookbook/?tipo=masculino',
+	        success: function(data){
+	        	success(data, "looks");
+	        	removeClickEvent("masculino");
+	        	addClickEvent("feminino");
+	        },
 	        error: error
 		});
 	}
 
-	$("#looks_maculino").on("click", criaLooks);
-	$("#looks_feminino").on("click", criaLooks);
+	function criaLooksFem(){
+		$.ajax({
+	        type: "GET",
+	        dataType: "json",
+	        url: 'http://localhost/ZD/admin/lookbook/?tipo=feminino',
+	        success: function(data){
+	        	success(data, "looks");
+	        	removeClickEvent("feminino");
+	        	addClickEvent("masculino");
+	        },
+	        error: error
+		});
+	}
+
+	function addClickEvent(tipo){
+		if(tipo == "masculino")
+			$("#looks_maculino").bind("click", criaLooksMasc);
+		else
+			$("#looks_feminino").bind("click", criaLooksFem);
+	}
+
+	function removeClickEvent(tipo){
+		if(tipo == "masculino")
+			$("#looks_maculino").unbind("click", criaLooksMasc);
+		else
+			$("#looks_feminino").unbind("click", criaLooksFem);
+	}
 
 	criaColecao();
+	criaLooksMasc();
 
 } )( jQuery );
