@@ -48,7 +48,7 @@
 		$.ajax({
 	        type: "GET",
 	        dataType: "json",
-	        url: 'http://www.zdjeans.com.br/colecao',
+	        url: 'http://localhost/ZD/colecao',
 	        success: function(data){
 	        	success(data, "colecao");
 	        },
@@ -60,7 +60,7 @@
 		$.ajax({
 	        type: "GET",
 	        dataType: "json",
-	        url: 'http://www.zdjeans.com.br/lookbook/?tipo=masculino',
+	        url: 'http://localhost/ZD/lookbook/?tipo=masculino',
 	        success: function(data){
 	        	success(data, "looks");
 	        	removeClickEvent("masculino");
@@ -74,7 +74,7 @@
 		$.ajax({
 	        type: "GET",
 	        dataType: "json",
-	        url: 'http://www.zdjeans.com.br/lookbook/?tipo=feminino',
+	        url: 'http://localhost/ZD/lookbook/?tipo=feminino',
 	        success: function(data){
 	        	success(data, "looks");
 	        	removeClickEvent("feminino");
