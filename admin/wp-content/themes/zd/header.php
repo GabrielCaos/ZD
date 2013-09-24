@@ -72,5 +72,5 @@
 	</div>
 </div>
 
-
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php wp_head(); ?>
