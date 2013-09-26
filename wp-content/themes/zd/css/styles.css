@@ -107,12 +107,12 @@ ul.cssMenu li:hover > ul{
 	-moz-filter: hue-rotate(180deg);
 	-o-filter: hue-rotate(180deg);
 	-ms-filter: hue-rotate(180deg);*/
-	-webkit-transition : -webkit-filter 20000ms linear
-	filter: hue-rotate(380deg);
-	-webkit-filter: hue-rotate(380deg);
-	-moz-filter: hue-rotate(380deg);
-	-o-filter: hue-rotate(380deg);
-	-ms-filter: hue-rotate(380deg);
+	-webkit-transition : -webkit-filter 80000ms linear
+	filter: hue-rotate(360deg);
+	-webkit-filter: hue-rotate(360deg);
+	-moz-filter: hue-rotate(360deg);
+	-o-filter: hue-rotate(360deg);
+	-ms-filter: hue-rotate(360deg);
 }
 
 #imgBG
@@ -136,6 +136,11 @@ ul.cssMenu li:hover > ul{
 
 }
 
+#actLogo{
+	position: absolute;
+margin-left: 952px;
+top: 0px;
+}
 
 
 /* custom css*/
