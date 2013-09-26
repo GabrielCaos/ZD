@@ -96,6 +96,48 @@ ul.cssMenu li:hover > ul{
 	padding-top: 22px;
 }
 
+
+
+#imgBG:hover
+{
+	
+
+	/*filter: hue-rotate(180deg);
+	-webkit-filter: hue-rotate(180deg);
+	-moz-filter: hue-rotate(180deg);
+	-o-filter: hue-rotate(180deg);
+	-ms-filter: hue-rotate(180deg);*/
+	-webkit-transition : -webkit-filter 20000ms linear
+	filter: hue-rotate(380deg);
+	-webkit-filter: hue-rotate(380deg);
+	-moz-filter: hue-rotate(380deg);
+	-o-filter: hue-rotate(380deg);
+	-ms-filter: hue-rotate(380deg);
+}
+
+#imgBG
+{
+	filter: hue-rotate(0);
+	-webkit-filter: hue-rotate(0);
+	-moz-filter: hue-rotate(0);
+	-o-filter: hue-rotate(0);
+	-ms-filter: hue-rotate(0);
+	-webkit-transition : -webkit-filter 2000ms linear
+}
+
+
+#imgBG
+{
+	/*filter: invert(1);
+	-webkit-filter: invert(1);
+	-moz-filter: invert(1);
+	-o-filter: invert(1);
+	-ms-filter: invert(1);*/
+
+}
+
+
+
 /* custom css*/
 
 #imgBG{
