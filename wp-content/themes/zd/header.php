@@ -39,7 +39,7 @@
 		<div class="container">
 	
 			<div id="actLogo">
-				<a href="http://www.actdesign.org">
+				<a href="http://www.actdesign.org" TARGET="_blank">
 					<img alt="ACT" src="wp-content/themes/zd/img/actdesign.png"></img></a>
 			</div>
 
