@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/* 
+	Template Name: Home
+*/ 
+
+get_header(); ?>
 
 <div class="container content container-fluid" id="home">
 	<div class="row-fluid">
@@ -24,6 +29,8 @@
 			<div id="imgRODAPE"></div>
 		</div>
 	</div>
+</div>
+
 </div>
 
 <?php get_footer(); ?>

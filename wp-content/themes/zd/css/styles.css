@@ -425,3 +425,101 @@ h2 {
 .bottom{
 	margin-bottom: 50px;
 }
+
+/* BLOG */
+.post{
+	width: 50%;
+	margin: auto;
+}
+
+.post-container{
+	background-color: white;
+	min-height: 380px;
+	padding: 20px;
+}
+
+.comentario-form-container{
+	padding: 20px;
+	background-color: white;
+}
+
+.post-titulo-container{
+	margin-bottom: 5px;
+}
+
+.post-titulo{
+	color: #c9701a;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.comentario-titulo{
+	color: #c9701a;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.post-data{
+	margin-bottom: 10px;
+}
+
+.post-titulo:hover{
+	text-decoration: none;
+	color: #c9701a;
+}
+
+.comentar-container{
+	margin-left: 420px;
+	height: 35px;
+}
+
+.post-footer{
+	background-color: white;
+	margin-bottom: 35px;
+}
+
+.comentar{
+	color: black;
+}
+
+.comentar:hover{
+	color: black;
+	text-decoration: none;
+}
+
+#comment{
+	width: 477px;
+}
+
+.comment{
+	margin-bottom: 15px;
+}
+
+.comment p{
+	margin-bottom: 5px;
+}
+
+.text-branco{
+	color: white;
+}
+
+.container-seta a{
+	width: 50px;
+	height: 50px;
+	/*background-color: #c9701a;*/
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.esquerda{
+	float: left;
+}
+
+.direita{
+	float: right;
+}
+
+#nav-list li{
+	text-transform: uppercase;
+}

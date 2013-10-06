@@ -1,33 +1,35 @@
+<?php get_header(); 
+
+if ( have_posts() ) : the_post();
+
+?>
+
+<div id="blog-container" class="container content container-fluid">
+	<div class="post row-fluid">
+		<div class="post-container">
+			<div class="post-titulo-container post-link">
+				<h1 class="post-titulo"><?php the_title(); ?></h1>
+			</div>
+			<div class="post-data">
+				<?php the_time('d/m/Y', '<p class="data-noticia">', '</p>') ?>
+			</div>
+			<div class="post-resumo"><?php the_content(); ?></div>
+		</div>
+		<div class="post-footer">
+			<div class="comentar-container">
+				comentar
+			</div>
+			<div class="comentario-form-container">
+				<?php comments_template(); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
 <?php
-/**
- * The Template for displaying all single posts.
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
- */
 
-get_header(); ?>
+endif;
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', get_post_format() ); ?>
-
-				<nav class="nav-single">
-					<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-					<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-					<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-				</nav><!-- .nav-single -->
-
-				<?php comments_template( '', true ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+get_footer(); ?>
