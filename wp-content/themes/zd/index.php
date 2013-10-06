@@ -14,7 +14,8 @@ get_header(); ?>
 		<div id="imgs-container-colecao">
 			<div id="img-oppened-colecao"></div>
 		</div>
-		<div id="bgPassador"></div>
+		<div id="bgPassador"></div>		
+		<div id="barraPassador"></div>
 	</div>
 
 	<div class="row-fluid" id="catalogo">
