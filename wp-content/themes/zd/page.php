@@ -20,10 +20,10 @@ get_header(); ?>
 
 	<div class="container-pilula-lista post row-fluid">
 		<div class="container-seta esquerda">
-			<?php echo get_previous_posts_link('Anterior', $wp_query->max_num_pages); ?>
+			<?php echo get_previous_posts_link('Voltar', $wp_query->max_num_pages); ?>
 	    </div>
 		<div class="container-seta direita">
-	    	<?php echo get_next_posts_link('Próximo', $wp_query->max_num_pages); ?>
+	    	<?php echo get_next_posts_link('Avançar', $wp_query->max_num_pages); ?>
 		</div>
 	</div>
 

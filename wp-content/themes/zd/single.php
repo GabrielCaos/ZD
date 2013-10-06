@@ -16,9 +16,6 @@ if ( have_posts() ) : the_post();
 			<div class="post-resumo"><?php the_content(); ?></div>
 		</div>
 		<div class="post-footer">
-			<div class="comentar-container">
-				comentar
-			</div>
 			<div class="comentario-form-container">
 				<?php comments_template(); ?>
 			</div>

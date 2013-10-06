@@ -8,7 +8,7 @@
 		<div class="post-data">
 			<?php the_time('d/m/Y', '<p class="data-noticia">', '</p>') ?>
 		</div>
-		<div class="post-resumo"><?php the_excerpt(); ?></div>
+		<div class="post-resumo"><?php the_content(); ?></div>
 	</div>
 	<div class="post-footer">
 		<div class="comentar-container">
