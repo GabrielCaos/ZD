@@ -447,6 +447,8 @@ h2 {
 }
 
 .post-include-container{
+	position: relative;
+	z-index: 2;
 	-moz-box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
 	-webkit-box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
 	box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
@@ -485,6 +487,7 @@ h2 {
 .comentar-container{
 	display: inline-block;
 	margin-right: 6px;
+	margin-left: 332px;
 	height: 35px;
 }
 
@@ -501,7 +504,6 @@ h2 {
 .post-footer{
 	background-color: white;
 	margin-bottom: 35px;
-	padding-left: 335px;
 }
 
 .comentar{
@@ -557,6 +559,8 @@ h2 {
 
 .fundo_right{
 	right: 0%;
+	position: absolute;
+	z-index: 1;
 }
 
 .fundo-laranja{

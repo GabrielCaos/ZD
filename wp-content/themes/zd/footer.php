@@ -70,16 +70,13 @@
 	}
 
 	function appendBlogImgs(){
-		$('<img class="blog_fundo" src="<?php echo get_template_directory_uri(); ?>/img/blog_fundo_2.png"/>')
-			.appendTo('#imgs_container').load(function(){
-				var body_height = $("body").height();
-				$('.blog_fundo').css("height", (body_height));
-		});
+		$('<img id="blog_fundo_right" class="blog_fundo" src="<?php echo get_template_directory_uri(); ?>/img/blog_fundo_2.png"/>')
+			.appendTo('#imgs_container');
 
-		$('<img class="blog_fundo fundo_right" src="<?php echo get_template_directory_uri(); ?>/img/blog_fundo_1.png"/>')
+		$('<img id="blog_fundo_left" class="blog_fundo fundo_right" src="<?php echo get_template_directory_uri(); ?>/img/blog_fundo_1.png"/>')
 			.appendTo('#imgs_container').load(function(){
 				var body_height = $("body").height();
-				$('.blog_fundo').css("height", (body_height));
+				$('#blog_fundo_left').css("height", (body_height));
 		});
 	}
 
@@ -139,7 +136,7 @@
 			  	var colecao_top = $("#colecao").offset().top - 70;
 			  	var rodape_top = $("#rodape").offset().top - 70;
 			  	var documment_top = $(document).scrollTop();
-			 	
+
 				if((documment_top >= colecao_top) && (documment_top <= catalogo_top)){
 				  	if(window.location.hash != '#colecao')
 			  			window.location.hash = 'colecao';
