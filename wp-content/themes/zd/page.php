@@ -20,7 +20,7 @@
 		<?php get_template_part('content',  get_post_format()); ?>
 	<?php endwhile; // end of the loop. ?>
 
-	<div class="container-pilula-lista post row-fluid">
+	<div class="post row-fluid">
 		<div class="container-seta esquerda">
 			<?php echo get_previous_posts_link('Voltar', $wp_query->max_num_pages); ?>
 	    </div>
