@@ -132,6 +132,39 @@
 				$("body").removeClass("fundo-laranja");
 			}
 
+			window.onscroll = function(oEvent) {
+				var home_top = $("#home").offset().top;
+		    	var catalogo_top = $("#catalogo").offset().top - 70;
+			  	var colecao_top = $("#colecao").offset().top - 70;
+			  	var rodape_top = $("#rodape").offset().top - 70;
+			  	var documment_top = $(document).scrollTop();
+			  	console.log('documment->', documment_top);
+				if((documment_top >= colecao_top) && (documment_top <= catalogo_top)){
+				  	if(window.location.hash != '#colecao')
+			  			window.location.hash = 'colecao';
+
+			  		console.log('colecao->', colecao_top);
+			  	}
+			  	else{
+			  		if((documment_top >= catalogo_top) && (documment_top <= rodape_top)){
+			  			if(window.location.hash != '#catalogo')
+			  				window.location.hash = 'catalogo';
+			  			console.log('catalogo->', catalogo_top);
+			  		}
+			  		else{
+			  			if(documment_top >= rodape_top){
+			  				if(window.location.hash != '#rodape')
+			  					window.location.hash = 'rodape';
+			  				console.log('rodape->', rodape_top);
+			  			}
+			  			else{
+			  				if(window.location.hash != '')
+			  					window.location.hash = '';
+			  			}
+			  		}
+			  	}
+			}
+
 			criaColecao();
 			criaLooksMasc();
 		}
