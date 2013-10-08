@@ -1,7 +1,9 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
-<div id="blog-container" class="container content container-fluid">
+<div id="imgs_container"></div>
+
+<div id="blog-container" class="container fundo-laranja content container-fluid">
+
 <?php 
 	$items_per_page = 6;
 	// the query to set the posts per page to $items_per_page
@@ -26,10 +28,8 @@ get_header(); ?>
 	    	<?php echo get_next_posts_link('Avançar', $wp_query->max_num_pages); ?>
 		</div>
 	</div>
+</div>
 
 </div>
 
-
-
-</div>
 <?php get_footer(); ?>

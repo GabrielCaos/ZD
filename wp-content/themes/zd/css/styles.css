@@ -432,14 +432,24 @@ h2 {
 
 /* BLOG */
 .post{
-	width: 500px;
+	width: 430px;
 	margin: auto;
 }
 
 .post-container{
 	background-color: white;
-	min-height: 380px;
+	min-height: 400px;
 	padding: 20px;
+}
+
+.post-container img{
+	text-align: center;
+}
+
+.post-include-container{
+	-moz-box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
+	box-shadow: 8px 8px 14px rgba(0,0,0,0.4);
 }
 
 .comentario-form-container{
@@ -473,13 +483,25 @@ h2 {
 }
 
 .comentar-container{
-	margin-left: 420px;
+	display: inline-block;
+	margin-right: 6px;
 	height: 35px;
+}
+
+.fb-container{
+	display: inline-block;
+}
+
+.fb-img{
+	height: 14px;
+	width: 14px;
+	margin-top: -5px;
 }
 
 .post-footer{
 	background-color: white;
 	margin-bottom: 35px;
+	padding-left: 335px;
 }
 
 .comentar{
@@ -492,7 +514,7 @@ h2 {
 }
 
 #comment{
-	width: 477px;
+	width: 382px;
 }
 
 .comment{
@@ -526,4 +548,17 @@ h2 {
 
 #nav-list li{
 	text-transform: uppercase;
+}
+
+.blog_fundo{
+	position: absolute;
+	height: 99%;
+}
+
+.fundo_right{
+	right: 0%;
+}
+
+.fundo-laranja{
+	background-color: #c9701a;
 }

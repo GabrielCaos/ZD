@@ -14,7 +14,7 @@
 	// cria o box no input
 	function criaBoxPosts()
 	{
-		add_meta_box("link-posts", "Link do Youtube", "addConteudoLinkPosts", "post", "advanced", "core");
+		add_meta_box("link-posts", "Link do Facebook", "addConteudoLinkPosts", "post", "advanced", "core");
 	}
 
 	//Adiciona conteúdo dentro da caixa e atribuindo os campos as variáveis
@@ -24,9 +24,9 @@
 		if (get_post_type( $post ) == "post") {
 
 			$custom = get_post_custom($post->ID);
-			$link_youtube = $custom["link_youtube"][0];
+			$link_fb = $custom["link_fb"][0];
 			
-			echo'<label>Link: <input size="70" id="link_youtube" name="link_youtube" type="text" value="'; echo $link_youtube; echo'" /></label><br /><br />';
+			echo'<label>Link: <input size="70" id="link_fb" name="link_fb" type="text" value="'; echo $link_fb; echo'" /></label><br /><br />';
 		}
 	}
 
@@ -36,7 +36,7 @@
 		global $post;
 		
 		if (get_post_type( $post ) == "post") {
-			update_post_meta($post->ID, "link_youtube", $_POST["link_youtube"]);
+			update_post_meta($post->ID, "link_fb", $_POST["link_fb"]);
 		}
 	}
 

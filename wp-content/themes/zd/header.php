@@ -53,7 +53,7 @@
 		
 			<div class="nav-collapse collapse">
 				<ul id="nav-list" class="nav pull-right cssMenu">
-					<li><a href="<?php echo get_home_url(); ?>/">Home</a></li>
+					<li><a href="<?php echo get_home_url(); ?>/#home">Home</a></li>
 					<li><a href="<?php echo get_home_url(); ?>/#colecao">Coleção</a></li>
 					<li><a href="<?php echo get_home_url(); ?>/#catalogo">Catálogo</a>
 						<ul id="looks_drop" class="drop">
