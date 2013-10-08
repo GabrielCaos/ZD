@@ -5,7 +5,7 @@
 <div id="blog-container" class="container fundo-laranja content container-fluid">
 
 <?php 
-	$items_per_page = 6;
+	$items_per_page = 4;
 	// the query to set the posts per page to $items_per_page
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	query_posts( array( 
