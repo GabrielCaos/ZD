@@ -25,11 +25,17 @@ get_header(); ?>
 		<div id="bgPassador"></div>
 	</div>
 
-	<div class="footer container content container-fluid" id="rodape">
+	<div class="footer container content container-fluid" id="zd">
 		<div id="imgs-containerFOOTER">
-			<div id="imgRODAPE"></div>
+			<div id="imgZD"></div>
 		</div>
 	</div>
+	<div class="footer container content container-fluid" id="lojas">
+		<div id="imgs-containerFOOTER">
+			<div id="imgLOJAS"></div>
+		</div>
+	</div>
+
 </div>
 
 </div>
