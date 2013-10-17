@@ -25,7 +25,7 @@ get_header(); ?>
 		<div id="bgPassador"></div>
 	</div>
 
-	<div class="footer container content container-fluid" id="zd">
+	<div class="row-fluid" id="zd">
 		<div id="imgs-containerFOOTER">
 			<div id="imgZD"></div>
 		</div>
