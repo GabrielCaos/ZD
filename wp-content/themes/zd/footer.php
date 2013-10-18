@@ -13,7 +13,7 @@
     function scrollAnimation(div_id){
     	$('html, body').animate({
 				scrollTop: $(div_id).offset().top
-		},600);
+		},1000);
     	window.location.hash = div_id.split("#")[1];
     }
 

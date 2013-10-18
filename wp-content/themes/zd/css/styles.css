@@ -77,7 +77,7 @@ ul.cssMenu li:hover > ul{
 	display:block;
 }
 
-.navbar .nav .active>a, .navbar .nav .active>a:hover {
+.navbar .nav .active>a {
 	color: #fff;
 	text-decoration: none;
 	background-color: #DD6819;
@@ -140,6 +140,18 @@ ul.cssMenu li:hover > ul{
 	position: absolute;
 margin-left: 952px;
 top: 0px;
+}
+
+#faceShare{
+	position: absolute;
+margin-left: 940px;
+top: 3px;
+}
+
+#instaShare{
+	position: absolute;
+margin-left: 922px;
+top: 3px;
 }
 
 #barraPassador {
