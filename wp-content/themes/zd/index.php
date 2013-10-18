@@ -8,6 +8,7 @@ get_header(); ?>
 <div class="container content container-fluid" id="home">
 	<div class="row-fluid">
 		<div id="imgBG"></div>
+		<div id="imgBG2"></div>
 	</div>
 
 	<div class="row-fluid" id="colecao">
