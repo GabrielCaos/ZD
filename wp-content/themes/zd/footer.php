@@ -211,7 +211,7 @@
 		}
 
 		var opts = {
-			speed: 500,
+			speed: 1000,
 			timer: 4000,
 			autoSlider: true,
 		    hasNav: true,
