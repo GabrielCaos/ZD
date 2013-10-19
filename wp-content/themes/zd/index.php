@@ -5,12 +5,12 @@
 
 get_header(); ?>
 
-<div class="container content container-fluid" id="home">
+<div class="container content container-fluid" id="container_home">
 	<div class="row-fluid">
-		<div id="imgBG"></div>
+		<div class="img_background" id="imgBG"></div>
 	</div>
 
-	<div class="row-fluid" id="colecao">
+	<div class="row-fluid" id="container_colecao">
 		<div id="imgs-container-colecao">
 			<div id="img-oppened-colecao"></div>
 		</div>
@@ -18,24 +18,24 @@ get_header(); ?>
 		<div id="barraPassador"></div>
 	</div>
 
-	<div class="row-fluid" id="catalogo">
+	<div class="row-fluid" id="container_catalogo">
 		<div id="imgs-container-looks">
 			<div id="img-oppened-looks"></div>
 		</div>
 		<div id="bgPassador"></div>
 	</div>
 
-	<div class="row-fluid" id="zd">
-		<div id="imgs-containerFOOTER">
-			<div id="imgZD"></div>
-		</div>
-	</div>
-	<div class="footer container content container-fluid" id="lojas">
-		<div id="imgs-containerFOOTER">
-			<div id="imgLOJAS"></div>
-		</div>
-	</div>
-
+	<div class="row-fluid" id="container_zd">
+        <div id="imgs-containerFOOTER">
+            <div class="img_background" id="imgZD"></div>
+        </div>
+    </div>
+   	
+   	<div class="footer container content container-fluid" id="container_lojas">
+        <div id="imgs-containerFOOTER">
+            <div class="img_background" id="imgLOJAS"></div>
+        </div>
+    </div>
 </div>
 
 </div>
